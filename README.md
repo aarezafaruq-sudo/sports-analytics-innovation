@@ -44,3 +44,22 @@ The tool is designed to require minimal technical expertise—decision makers in
 ## Connection to Chapter 7
 
 This idea currently represents the **Creative Phase** of analytics innovation as described in Chapter 7. In this phase, an analyst identifies a meaningful organizational problem and proposes a data-driven solution at a high level. The idea has not yet been tested, prototyped with real data, or presented to decision makers for feedback. It exists as a well-defined concept supported by a logical framework, which is precisely where the creative phase ends and the prototyping phase begins. The next steps—building a working mock dashboard and presenting it to the coaching staff—would move this idea into the prototyping phase.
+
+
+---
+
+## Prototype Evaluation
+
+**Should the prototype enhancement be integrated into the main project?**
+
+Yes. The decomposed sub-score approach proposed in the prototype represents a meaningful and well-reasoned improvement over the original single composite Load Score. The core benefit—giving decision makers visibility into *which specific dimension* of load is problematic rather than a single opaque number—directly addresses a known limitation of aggregate metrics: they mask the underlying drivers of risk. Analytics ideas that surface more granular information while maintaining simplicity for the end user (via a visual dashboard) have a high probability of gaining organizational adoption. The sub-score structure also makes the model more interpretable, which is critical when coaches and medical staff need to trust and act on a tool's outputs in high-stakes situations.
+
+**What type of feedback from decision makers would influence this decision?**
+
+Several forms of feedback would be important before full integration:
+
+- **Cognitive load concerns:** If coaches find that four separate sub-scores create information overload during the limited pre-practice window, the design might need to prioritize one or two key sub-scores while keeping the others accessible on a secondary view.
+- **Metric validity feedback:** Medical and training staff would need to confirm that the four sub-score dimensions (Physical Load, Cumulative Fatigue, Schedule Stress, Recovery Index) align with their clinical intuition about injury risk. If practitioners feel a key dimension is missing or a weight is misaligned, that would prompt recalibration.
+- **Usage pattern data:** If a pilot deployment showed that coaches only ever looked at the overall composite score and ignored the sub-scores, it would suggest the sub-scores are not being used as intended, and a redesign of the information hierarchy would be needed before merging into the main version.
+
+Based on the conceptual strength of the enhancement and its alignment with the goals of the project, the prototype is recommended for integration.
