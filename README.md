@@ -78,3 +78,36 @@ Before fully integrating the League Difficulty Adjustment, it would be important
 - **Is it easy to explain?** If the sporting director cannot easily explain to the club owner why a player ranked lower with the adjustment than without it, the method might be too complex and need to be simplified.
 
 Overall, the prototype enhancement is recommended for integration because it directly addresses a known weakness of the original design and aligns with how football professionals already evaluate talent.
+
+
+---
+
+## Prototype Enhancement
+
+*(Merged from the prototype branch – Integration Decision: Adopted)*
+
+**What is being changed:**
+
+The original Value Score only looks at a player's output per unit of market value. The prototype adds a **League Difficulty Adjustment** to the Value Score calculation. This means the tool also takes into account how competitive the league the player currently plays in is. For example, a striker scoring 15 goals per season in a top European league (like the Premier League or La Liga) is much harder to replicate than a striker scoring the same number in a lower-division league with weaker competition.
+
+The enhancement assigns each league in the Transfermarkt dataset a difficulty rating based on average player market values within that league. A player's raw performance stats are then multiplied by the league difficulty rating before the Value Score is calculated. This adjusted score gives a fairer and more accurate picture of each player's true quality.
+
+**Why this change improves decision-making:**
+
+Without the league adjustment, a club might shortlist a player from a weaker league simply because they have impressive raw numbers and a low market value. This has historically led to "flop signings" – players who looked great on paper in a weaker league but could not adapt to a higher level. By adjusting the Value Score for league difficulty, the tool filters out misleading data and gives decision makers more confidence that the players at the top of the list are genuinely ready to compete. The sporting director and head coach can trust the rankings more because they reflect real-world context, not just raw statistics.
+
+---
+
+## Reflection on Innovation and Version Control
+
+**How branches support low-risk experimentation in analytics organizations:**
+
+Think of a branch like a scratch pad that is separate from the official version of the project. When the League Difficulty Adjustment idea was created on the prototype branch, it did not affect the original Value Score tool that was already on the main branch. If the prototype had turned out to be a bad idea – maybe the league ratings were inaccurate or decision makers found it too confusing – the branch could simply be ignored and deleted, with no harm done to the main project. This is exactly how analytics teams should work: test ideas in a safe space before committing to them. Chapter 7 describes this as creating protected room for innovation, and branches are GitHub's built-in way of doing that.
+
+**How GitHub helps analytics ideas gain traction with decision makers:**
+
+One of the biggest challenges in sports analytics is getting coaches and executives to trust a new tool. GitHub helps with this because every change is recorded with a clear message explaining what was done and why. A sporting director who wants to understand how the tool was built can look at the commit history and see a logical progression: first the idea was defined, then a prototype enhancement was tested, then it was evaluated against decision-maker needs, and finally it was integrated into the official version. This paper trail builds credibility. It shows that the analytics team did not just hand over a black box – they thought carefully, iterated, and made changes for documented reasons.
+
+**How this workflow aligns with the Chapter 7 innovation framework:**
+
+Chapter 7 describes four phases of analytics innovation: Creative, Prototyping, Engagement, and Build. This GitHub project followed that exact path. The Creative Phase was the initial README commit on main, where the Football Recruiting Capital Allocation Tool idea was explained for the first time. The Prototyping Phase happened on the prototype branch, where the League Difficulty Adjustment was developed and tested without disrupting the main project. The Engagement Phase was the Prototype Evaluation section added to main, which simulated gathering feedback from the sporting director and head coach before making a final decision. The Build Phase was the merge of the prototype content into main, representing the club officially adopting the improved tool. GitHub made each of these phases visible and traceable, which is exactly what a real analytics organization needs to build trust and move ideas from concept to action.
