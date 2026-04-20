@@ -57,3 +57,24 @@ The tool is designed to be simple enough that no technical training is needed. D
 This project currently represents the **Creative Phase** of the innovation framework described in Chapter 7. In the Creative Phase, the analyst has identified a real organizational problem (overspending on transfers without data to guide decisions), proposed a data-driven solution (the Value Score ranking system), and defined what data and analysis would be involved.
 
 The idea has not yet been built, tested with real data, or shown to a sporting director or coach for feedback. Those next steps – building a working version of the tool and presenting it to decision makers – would move this project into the **Prototyping Phase**.
+
+
+---
+
+## Prototype Evaluation
+
+**Should the prototype enhancement be integrated into the main project?**
+
+Yes. The League Difficulty Adjustment is a smart and practical improvement to the original Value Score. One of the most common mistakes clubs make when using raw stats to evaluate players is ignoring the context in which those stats were produced. A striker with 20 goals in a weaker league is not automatically comparable to a striker with 15 goals in one of Europe's top competitions. By weighting performance stats according to the difficulty of the league, the tool becomes more reliable and less likely to lead clubs toward bad signings.
+
+This is also an easy improvement to explain to a sporting director or head coach – it matches how scouts and experienced football people already think about player evaluation. That alignment between the data tool and existing intuition makes it much more likely that decision makers will trust and use the tool.
+
+**What type of feedback from decision makers would influence this decision?**
+
+Before fully integrating the League Difficulty Adjustment, it would be important to gather the following feedback:
+
+- **Does the league difficulty rating feel accurate?** If a sporting director looks at the difficulty scores assigned to different leagues and disagrees with the rankings (for example, if a league they know well is rated too high or too low), the adjustment formula would need to be recalibrated.
+- **Does it change the shortlist in a useful way?** The most important test is whether the adjusted rankings produce a player shortlist that feels more credible and actionable to the head coach. If the new rankings still produce names the coaching staff does not recognize as realistic targets, further refinement is needed.
+- **Is it easy to explain?** If the sporting director cannot easily explain to the club owner why a player ranked lower with the adjustment than without it, the method might be too complex and need to be simplified.
+
+Overall, the prototype enhancement is recommended for integration because it directly addresses a known weakness of the original design and aligns with how football professionals already evaluate talent.
