@@ -44,3 +44,16 @@ The tool is designed to require minimal technical expertise—decision makers in
 ## Connection to Chapter 7
 
 This idea currently represents the **Creative Phase** of analytics innovation as described in Chapter 7. In this phase, an analyst identifies a meaningful organizational problem and proposes a data-driven solution at a high level. The idea has not yet been tested, prototyped with real data, or presented to decision makers for feedback. It exists as a well-defined concept supported by a logical framework, which is precisely where the creative phase ends and the prototyping phase begins. The next steps—building a working mock dashboard and presenting it to the coaching staff—would move this idea into the prototyping phase.
+
+
+---
+
+## Prototype Enhancement
+
+**What is being changed:**
+
+The original analytics idea uses a single composite Load Score (0–100) calculated from a weighted average of all input variables. The proposed enhancement is to **decompose the Load Score into four distinct sub-scores**: Physical Load (based on sprint distance and jumps), Cumulative Fatigue (rolling 7-day exertion trend), Schedule Stress (back-to-back games, travel hours), and Recovery Index (sleep quality and rest hours between games). Each sub-score would be displayed independently on the dashboard in addition to the overall composite score.
+
+**Why this change could improve decision-making:**
+
+Presenting disaggregated sub-scores gives coaches and medical staff far more actionable information than a single number. For example, a player might have a moderate overall Load Score of 65, but if their Cumulative Fatigue sub-score is at 90 (near the red zone), the staff knows exactly which dimension of load is most at risk—and can target a specific intervention such as reduced practice running rather than a full rest day. This granularity reduces over-reliance on blunt decisions (e.g., sitting a player entirely) when a more targeted adjustment would suffice. Decision makers gain transparency into *why* a player is flagged, not just *that* they are flagged, which significantly increases trust in and adoption of the tool across the organization.
